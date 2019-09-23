@@ -9,6 +9,31 @@ module.exports= function(app){
     })
 
     app.post("/api/friends", function(request,response){
-        
+        console.log(request.body.scores)
+        const user = req.body;
+
+        for(let i = 0; i < user.scores.length; i++) {
+            user.scores[i] = parseInt(user.scores[i]);
+          }
+          const bestFriendIndex = 0;
+          const minimumDifference = 30;
+
+          for(let i = 0; i < friends.length; i++) {
+            let totalDifference = 0;
+            for(let j = 0; j < friends[i].scores.length; j++) {
+              let difference = Math.abs(user.scores[j] - friends[i].scores[j]);
+              totalDifference += difference;
+            }
+
+            if(totalDifference < minimumDifference) {
+                bestFriendIndex = i;
+                minimumDifference = totalDifference;
+              }
+            }  
+            friends.push(user);
+         res.json(friends[bestFriendIndex]);
+
+
+
     })
 }
