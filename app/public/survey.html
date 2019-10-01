@@ -1,13 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FriendFinder</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>survey</title>
+    <script src="friends.js"></script>
+    <style>
+      .card {
+        margin: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="questions container ">
+      <div class="card">
+        <div class="card-body">
+          <h1>Survey Questions</h1>
+          <p>
+            Answer every question! The scale being of 1-5 with 1 being strongly
+            disagree and 5 being strongly agree
+          </p>
+        </div>
+      </div>
+
+      <div class="Que1 card">
+        <h4>Question 1</h4>
+        <p>
+          I am a very lazy person.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que2 card">
+        <h4>Question 2</h4>
+        <p>
+          I think humans are ruining the atmosphere.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+        <h4></h4>
+      </div>
+
+      <div class="Que3 card">
+        <h4>Question 3</h4>
+        <p>
+          I think we should all be coders
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que4 card">
+        <h4>Question 4</h4>
+        <p>
+          I am the funniest person to be around.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que5 card">
+        <h4>Question 5</h4>
+        <p>
+          I think i am the greatest person ever.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que6 card">
+        <h4>Question 6</h4>
+        <p>
+          I like to sleep instead of going out.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que7 card">
+        <h4>Question 7</h4>
+        <p>
+          i am very confident.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que8 card">
+        <h4>Question 8</h4>
+        <p>
+          I care about the environment.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que9 card">
+        <h4>Question 9</h4>
+        <p>
+          You are very good at coding.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+
+      <div class="Que10 card">
+        <h4>Question 10</h4>
+        <p>
+          We need superheros in the world.
+          <select>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="1">1 </option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 </option>
+          </select>
+        </p>
+      </div>
+    </div>
+
+    <button
+      type="button "
+      class="btn btn-primary btn-lg btn-block container submit"
+    >
+      Submit
+    </button>
+    <div class="response container">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top friendPic" src="..." alt="Card image cap" />
+        <div class="card-body">
+          <p class="thank you">
+            Thank you for your answer, here is your match<span
+              id="matchName"
+            ></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer container">
+      <a href="/api/friends"> API Friends List</a>
+    </footer>
+  </body>
 </html>
